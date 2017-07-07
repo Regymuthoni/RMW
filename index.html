@@ -5,106 +5,129 @@
      <link rel="stylesheet" type="text/css" href="css/main.css">
      <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
+     <script >
+      // start point
+      var i = 0;
+      var images = [];
+      var time =3000;
+
+      // image list
+      images[0]= 'image/simp6.gif';
+      images[1]= 'image/simp2.gif';
+      images[2]= 'image/simp3.gif';
+      images[3]= 'image/simp4.gif';
+      images[4]= 'image/simp5.gif';
+
+      images[5]= 'image/minion.gif';
+      images[6]= 'image/curtain.gif';
+      images[7]= 'image/panda.gif';
+      images[8]= 'image/round-flower.gif';
+
+      // function to change the image.
+
+      function changeImg (){
+          document.slide.src = images[i];
+        if (i<images.length -1) { 
+         i++;
+        }
+        else{
+          i = 0;
+        }
+        setTimeout("changeImg()" , time);
+      }
+      //outside the function.
+      window.onload = changeImg;
+      </script>
+
    </head>
+
+
+
    <body>
-   <div class="BODY">
-
-   <div class="intro">
-
-   <div class="LOG">
-   <img src="image/muthoni_logo.gif">
-   </div>
-   <div class="welcome">
-   <h1>Hi,  I'm Regina.I design and Build,</h1>
-   <div class="flow">
-   <marquee >Websites and Mobile application.</marquee>
-   </div>
-   </div>
-   <div id="Firststep">More Info</div>
-
-   </div>
-
-   <div class="aboutme">
-   <div class="img-circle" src >
-   </div>
+   <header>
+   <div id="list8">
   
-   <p>An innovative web development student at Akirachix, who enjoys the diversity of ideas in a team oriented set up. Able to create a functional website using HTML, CSS and Javascript.  Seeking an entry-level web development internship position and engage in building of educational games. </p>
-   <input type="button" value="signup">
+  <ul>
+
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#work">WORK</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+
+  </ul>
+  </div>
+
+   </header>
+   <div class="main">
+   <!-- about me container -->
+   <div class="class1">
+   <div class="class1-image">
+     
    </div>
+   <div class="class1-word1"><h1>Hi, i'm<br><img src="image/name.gif"></h1></div>
+    <div class="class1-word2"><h2>A  web designer and an upcoming developer.</h2></div>
 
-    <div class="exe">
-
-    <div class="img">
-    <img src="image/html.gif">
-    </div>
-
-    <div class="img">
-    <img src="image/Android-Studio.gif">
     </div>
     
-    <div class="img">
-    <img src="image/fusion.gif">
+   <!--  what i do -->
+
+    <div class="work">
+
+    <div class="about"> <a name="about"></a>
+    <div class="pic"><img src="image/muthoni_logo.gif"></div>
+    <h2>Hi.</h2>
+
+      <p>I'm a web designer/developer, based in Nairobi. I have a passion for web design and love to create for web and mobile devices.I can code website from scratch and  also work with frameworks like bootstraps.With every line of code, I strive to make the web as simple but a beautiful place. </p>
     </div>
-    <div class="word1">
-    I design in the broswer with HTML, CSS and a touch of JavaScript.I love Coding thing from scratch but i can also work with Front-end frameworks like Bootstraps.With every line of code ,i strive to make the web a beautiful place.</p>
-     <a href="https://github.com/Regymso/HTML_CSS_JAVASCRIPT">
-    <input type="button" value="learn More">
-      </a>
-    </div>
-    <div class="word2">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
    
-    <input type="button" value="learn More">
-  
-    </div>
-    <div class="word3">
-    <p>With the hardware skill I have I acquired,I use fusion to transform ideas and design product that are well thought out,design that create a different user experience</p>
-    <input type="button" value="learn More">
-    </div>
+    <h1>What I can I do.</h1>
+    <hr>
+
+      <div class="code">
+        <img src="image/pic1.gif"> </div>
+    
+      <div class="desc1"><h1>Design what you want.</h1><p>I'm able to translate ones ideas into sketch and also i can be able interprete others websites wireframes.
+     .</p>
+     </div>
+
+      <div class="desc2"><h1>Developer what you need.</h1><p>Using both my designing skills and coding skills, i can be able to create a website that can run across different  platforms devices.
+     .</p>
+     </div>
+
+      <div class="design"> <img src="image/html.gif">
+      </div>
 
     </div>
-    <div class="refs">
+
+
+    <div class="work"> <a name="work"> </a>
+    <div class="sample">
+    <h1>What i've been up to.</h1><hr>
+
+    <h3>Here's a selection of some recent work.<br> For more up to the minute work, you can visit me on <a href="https://github.com/Regymuthoni">github.</a> </h3>
+    
+
+    </div>
+
+   
+
+   <div class="websites">
+     <img name="slide" width="1000" height="700">
+   </div> 
+
+   <p><br>HTML/CSS/JAVASCRIPT , <br>Photoshop, AdobeIllustrator and InDesign</p>
+
+      </div>
+
+    <footer>
+    <div class="contact"> <a name="contact"> </a>
+
+     <p>Tel: +254714892134.<br>Github Name: RegyMuthoni.<br><br>Email:reginamwanjiru@gmail.com.<br>Address:79415-000 Nairobi.
+     </p>
+    </div>
       
-      <div class="ref1">
-      <div class="circle1">
-      </div>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      </p>
-      </div>
-
-       <div class="ref2">
-       <div class="circle2">
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      </p>
-      </div>
-
-
+    </footer>
     </div>
-
-     <div class="footer">
-
-     <div class="log">
-     <img src="image/logsmall.gif">
-
-     </div>
-     <div class=" BY"> 
-     <p>Handmade by Regina M Wanjiru @2017</p>
-     </div>
-     <div class="icons">
-     <div class="space"><img src="image/linked-40.png"></div>
-     <div class="space"><img src="image/facebook.png"></div>
-     <div class="space"><img src="image/plus.png"></div>
-     </div>
-      </div>
-
+  
   </body>
 </html>
 

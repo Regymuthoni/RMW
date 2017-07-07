@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Regina Portfolio</title>
+     <link rel="stylesheet" type="text/css" href="css/main.css">
+     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <script >
+      // start point
+      var i = 0;
+      var images = [];
+      var time =3000;
+
+      // image list
+      images[0]= 'image/simp1.png';
+      images[1]= 'image/simp2.gif';
+      images[2]= 'image/simp3.gif';
+      images[3]= 'image/simp4.gif';
+      images[4]= 'image/simp5.gif';
+
+      // function to cahnge the image.
+
+      function changeImg (){
+          document.slide.src = images[i];
+        if (i<images.length -1) { 
+         i++;
+        }
+        else{
+          i = 0;
+        }
+        setTimeout("changeImg()" , time);
+      }
+      //outside the function.
+      window.onload = changeImg;
+
+
+
+
+
+
+
+      </script>
+
+   </head>
+   <body>
+    <header>
+
+  <ul>
+   
+    <li><a href="index.html">About</a></li> 
+    <li class="active"><a href="WORK.html">work</a></li>
+  </ul>
+   </header>
+
+   <div class="main">
+   <div class="intro">
+     <h1>What I've been up to.</h1>
+     <p><a href="https://github.com/Regymuthoni">github</a> </p>
+   </div>
+
+   <div class="port1">
+   <div class="websites">
+     <img name="slide" width="1200" height="600">
+  
+   </div>
+    
+   </div>
+
+
+  <div class="slider-holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <div class="image-holder">
+
+            <img src="image/simp2.gif" class="slider-image" />
+            <img src="image/simp2.gif" class="slider-image" />
+            <img src="image/simp2.gif" class="slider-image" />
+            <img src="image/simp3.gif" class="slider-image" />
+        </div>
+        <div class="button-holder">
+            <a href="#slider-image-1" class="slider-change"></a>
+            <a href="#slider-image-2" class="slider-change"></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+        </div>
+    </div>
+
+
+
+
+    
+   <footer></footer>
+
+
+
+  </div>
+  </body>
+</html>
+
